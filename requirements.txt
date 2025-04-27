@@ -6,3 +6,4 @@ altair
 pydeck
 requests
 pillow
+xgboost
