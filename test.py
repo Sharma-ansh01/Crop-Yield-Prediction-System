@@ -8,9 +8,9 @@ from sklearn.preprocessing import OrdinalEncoder
 
 # Load data
 data = pd.read_csv("crop_production.csv")
-with open(r"encoder.pkl", 'rb') as file:
+with open("encoder.pkl", 'rb') as file:
     encoder = pickle.load(file)
-with open(r"scaler.pkl", 'rb') as file:
+with open("scaler.pkl", 'rb') as file:
     scaler = pickle.load(file)
 
 # Set target and remove from data
