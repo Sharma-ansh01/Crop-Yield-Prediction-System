@@ -7,7 +7,7 @@ import pickle
 from sklearn.preprocessing import OrdinalEncoder
 
 # Load data
-data = pd.read_csv(r"C:\Users\anshh\OneDrive\Desktop\Crop_Yield-master\Crop_Yield-master\crop_production.csv")
+data = pd.read_csv("crop_production.csv")
 with open(r"encoder.pkl", 'rb') as file:
     encoder = pickle.load(file)
 with open(r"scaler.pkl", 'rb') as file:
@@ -23,7 +23,7 @@ with open(r"scaler.pkl", 'rb') as file:
 # Load your trained models
 # with open(r'C:\Users\anshh\OneDrive\Desktop\Crop_Yield-master\Crop_Yield-master\regressor.pkl', 'rb') as file:
 #     clf = pickle.load(file)
-with open(r"C:\Users\anshh\OneDrive\Desktop\Crop_Yield-master\XGBregressor2.pkl", 'rb') as file:
+with open("XGBregressor2.pkl", 'rb') as file:
     xgb_model = pickle.load(file)
 
 
